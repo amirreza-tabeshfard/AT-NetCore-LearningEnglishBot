@@ -1,0 +1,138 @@
+{
+  "version": "3.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "shabnam-font@5.0.1",
+      "destination": "wwwroot/lib/fonts/shabnam-font/"
+    },
+    {
+      "library": "vazir-font@30.1.0",
+      "destination": "wwwroot/lib/fonts/vazir-font/"
+    },
+    {
+      "library": "ant-design-icons-svg@4.4.2",
+      "destination": "wwwroot/lib/icons/ant-design-icons-svg"
+    },
+    {
+      "library": "codex-icons@1.17.0",
+      "destination": "wwwroot/lib/icons/codex-icons"
+    },
+    {
+      "library": "fatcow-icons@20130425",
+      "destination": "wwwroot/lib/icons/fatcow-icons"
+    },
+    {
+      "library": "material-design-icons@4.0.0",
+      "destination": "wwwroot/lib/icons/material-design-icons"
+    },
+    {
+      "library": "simple-icons@13.17.0",
+      "destination": "wwwroot/lib/icons/simple-icons"
+    },
+    {
+      "library": "akar-icons-fonts@1.1.22",
+      "destination": "wwwroot/lib/icons-fonts/akar-icons-fonts"
+    },
+    {
+      "library": "bootstrap-icons@1.13.1",
+      "destination": "wwwroot/lib/icons-fonts/bootstrap-icons"
+    },
+    {
+      "library": "boxicons@2.1.4",
+      "destination": "wwwroot/lib/icons-fonts/boxicons"
+    },
+    {
+      "library": "cc-icons@1.2.1",
+      "destination": "wwwroot/lib/icons-fonts/cc-icons"
+    },
+    {
+      "library": "clarity-icons@0.10.28",
+      "destination": "wwwroot/lib/icons-fonts/clarity-icons"
+    },
+    {
+      "library": "evil-icons@1.10.1",
+      "destination": "wwwroot/lib/icons-fonts/evil-icons"
+    },
+    {
+      "library": "flag-icon-css@7.2.3",
+      "destination": "wwwroot/lib/icons-fonts/flag-icon-css"
+    },
+    {
+      "library": "font-awesome@7.0.1",
+      "destination": "wwwroot/lib/icons-fonts/font-awesome"
+    },
+    {
+      "library": "fontawesome-iconpicker@3.2.0",
+      "destination": "wwwroot/lib/icons-fonts/fontawesome-iconpicker"
+    },
+    {
+      "library": "fonticonpicker@2.0.0",
+      "destination": "wwwroot/lib/icons-fonts/fonticonpicker"
+    },
+    {
+      "library": "ionicons@8.0.13",
+      "destination": "wwwroot/lib/icons-fonts/ionicons"
+    },
+    {
+      "library": "line-awesome@1.3.0",
+      "destination": "wwwroot/lib/icons-fonts/line-awesome"
+    },
+    {
+      "library": "MaterialDesign-Webfont@7.4.47",
+      "destination": "wwwroot/lib/icons-fonts/MaterialDesign-Webfont"
+    },
+    {
+      "library": "simple-line-icons@2.5.5",
+      "destination": "wwwroot/lib/icons-fonts/simple-line-icons"
+    },
+    {
+      "library": "tabler-icons@3.34.1",
+      "destination": "wwwroot/lib/icons-fonts/tabler-icons"
+    },
+    {
+      "library": "topcoat-icons@0.1.0",
+      "destination": "wwwroot/lib/icons-fonts/topcoat-icons"
+    },
+    {
+      "library": "typicons@2.1.2",
+      "destination": "wwwroot/lib/icons-fonts/typicons"
+    },
+    {
+      "library": "weather-icons@2.0.12",
+      "destination": "wwwroot/lib/icons-fonts/weather-icons"
+    },
+    {
+      "library": "remixicon@4.6.0",
+      "destination": "wwwroot/lib/icons-fonts/remixicon/"
+    },
+    {
+      "library": "bootstrap@5.3.8",
+      "destination": "wwwroot/lib/main/bootstrap"
+    },
+    {
+      "library": "jquery@3.7.1",
+      "destination": "wwwroot/lib/main/jquery"
+    },
+    {
+      "library": "jQuery-Validation-Engine@2.6.4",
+      "destination": "wwwroot/lib/main/jQuery-Validation-Engine"
+    },
+    {
+      "library": "jquery-validation-unobtrusive@4.0.0",
+      "destination": "wwwroot/lib/main/jquery-validation-unobtrusive"
+    },
+    {
+      "library": "qrcode@1.5.1",
+      "destination": "wwwroot/lib/main/qrcode"
+    },
+    {
+      "library": "qrcode-generator@1.4.4",
+      "destination": "wwwroot/lib/main/qrcode-generator"
+    },
+    {
+      "library": "twitter-bootstrap@3.4.1",
+      "destination": "wwwroot/lib/main/twitter-bootstrap"
+    }
+  ]
+}

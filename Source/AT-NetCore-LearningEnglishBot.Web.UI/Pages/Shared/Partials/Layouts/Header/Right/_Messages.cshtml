@@ -1,0 +1,101 @@
+﻿<div class="header-element cart-dropdown">
+    <a href="javascript:void(0);" class="header-link dropdown-toggle" data-bs-auto-close="outside" data-bs-toggle="dropdown">
+        <i class="fe fe-mail header-link-icon"></i>
+        <span class="badge bg-success rounded-pill header-icon-badge" id="cart-icon-badge">
+            20
+        </span>
+    </a>
+    <div class="main-header-dropdown dropdown-menu dropdown-menu-end" data-popper-placement="none">
+        <div class="p-3">
+            <div class="d-flex align-items-center justify-content-between">
+                <p class="mb-0 fs-17 fw-medium">You have messages</p><span class="badge bg-success-transparent" id="cart-data">
+                    20 Items
+                </span>
+            </div>
+        </div>
+        <div>
+            <hr class="dropdown-divider">
+        </div>
+        <ul class="list-unstyled mb-0" id="header-cart-items-scroll" data-simplebar="init">
+            <div class="simplebar-wrapper" style="margin: 0px;">
+                <div class="simplebar-height-auto-observer-wrapper">
+                    <div class="simplebar-height-auto-observer"></div>
+                </div>
+                <div class="simplebar-mask">
+                    <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                        <div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: auto; overflow: hidden;">
+                            <div class="simplebar-content" style="padding: 0px;">
+                                @{
+                                    for (int i = 1; i <= 20; i++)
+                                    {
+                    <li class="dropdown-item">
+                        <div class="d-flex align-items-start cart-dropdown-item">
+                            <img src="~/image/layouts/users/[01] - amirreza tabeshfard.jpg" class="avatar avatar-md avatar-rounded br-5 me-3" />
+                            <div class="flex-grow-1">
+                                <div class="d-flex align-items-start justify-content-between mb-0">
+                                    <div class="mb-0 fs-13 text-dark fw-medium">
+                                        <a href="chat.html">
+                                            Name
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0);" class="header-cart-remove float-end dropdown-item-close">
+                                            <i class="bi bi-x-octagon"></i>
+                                        </a>
+                                    </div>
+                                </div> <div class="min-w-fit-content d-flex align-items-start justify-content-between">
+                                    <ul class="header-product-item d-flex">
+                                        <li>
+                                            Message
+                                        </li>
+                                        <li class="text-muted">
+                                            3 hours ago
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                }
+            }
+    </div>
+</div>
+</div>
+</div>
+<div class="simplebar-placeholder" style="width: 0px; height: 0px;">
+</div>
+</div>
+<div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+    <div class="simplebar-scrollbar" style="width: 0px; display: none;"></div>
+</div>
+<div class="simplebar-track simplebar-vertical" style="visibility: hidden;">
+    <div class="simplebar-scrollbar" style="height: 0px; display: none;"></div>
+</div>
+</ul>
+<div class="p-3 empty-header-item border-top">
+    <div class="d-grid">
+        <a href="chat.html" class="btn btn-primary">
+            See All Messages
+        </a>
+    </div>
+</div>
+<div class="p-5 empty-item d-none">
+    <div class="text-center">
+        <span class="avatar avatar-xl avatar-rounded bg-warning-transparent">
+            <i class="ri-chat-2-line fs-2"></i>
+        </span>
+        <h6 class="fw-bold mb-1 mt-3">
+            Your Inbox is Empty
+        </h6>
+        <span class="mb-3 fw-normal fs-13 d-block">
+            See more messages in chat page :)
+        </span>
+        <a href="Chat.html" class="btn btn-primary btn-wave btn-sm m-1 waves-effect waves-light" data-abc="true">
+            continue Viewing
+            <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+    </div>
+</div>
+</div>
+</div>

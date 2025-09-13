@@ -1,0 +1,108 @@
+﻿<div class="offcanvas offcanvas-end" tabindex="-1" id="notification-sidebar-canvas" aria-labelledby="offcanvasRightLabel1">
+    <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title text-default fs-17 fw-medium" id="offcanvasRightLabel1">
+            Notifications
+            <span class="badge bg-danger-transparent" id="notifiation-data">
+                10 Unread
+            </span>
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"> </button>
+    </div>
+    <div class="offcanvas-body p-0 sidebar-right">
+        <div id="header-notification-scroll" data-simplebar="init">
+            <div class="simplebar-wrapper" style="margin: 0px;">
+                <div class="simplebar-height-auto-observer-wrapper">
+                    <div class="simplebar-height-auto-observer"></div>
+                </div>
+                <div class="simplebar-mask">
+                    <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                        <div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: auto; overflow: hidden;">
+                            <div class="simplebar-content" style="padding: 0px;">
+                                @{
+                                    for (int i = 1; i <= 10; i++)
+                                    {
+                                        <div class="list-group-item  align-items-center border-start-0 border-end-0 border-top-0">
+                                            <div class="d-flex">
+                                                <span class="avatar avatar-lg me-3 avatar-rounded">
+                                                    <img src="~/image/layouts/users/[01] - amirreza tabeshfard.jpg" />
+                                                </span>
+                                                <div class="w-65">
+                                                    <a href="javascript:void(0);" class="fw-medium fs-16">
+                                                        Amirreza Tabeshfard
+                                                        <p class="text-muted fw-normal">
+                                                            Sent Message
+                                                        </p>
+                                                    </a> <span class="clearfix"></span> <span class="text-muted fs-13 ms-auto d-inline-block">
+                                                        <i class="mdi mdi-clock text-muted me-1"></i>30 mins ago
+                                                    </span>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <div class="text-end">
+                                                        <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span class="fe fe-more-horizontal p-1 text-muted"></span>
+                                                        </a> <ul class="dropdown-menu">
+                                                            <li>
+                                                                <a class="dropdown-item" href="javascript:void(0);">
+                                                                    <i class="fe fe-eye me-2"></i>
+                                                                    View
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item" href="javascript:void(0);">
+                                                                    <i class="fe fe-plus-circle me-2"></i>
+                                                                    Add
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item" href="javascript:void(0);">
+                                                                    <i class="fe fe-trash-2 me-2"></i>
+                                                                    Remove
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item" href="javascript:void(0);">
+                                                                    <i class="fe fe-settings me-2"></i>
+                                                                    More
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <a href="javascript:void(0);" class="header-cart-remove dropdown-item-close1">
+                                                        <i class="bi bi-trash3"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="simplebar-placeholder" style="width: auto; height: 908px;"></div>
+            </div>
+            <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+                <div class="simplebar-scrollbar" style="width: 0px; display: none;"></div>
+            </div>
+            <div class="simplebar-track simplebar-vertical" style="visibility: hidden;">
+                <div class="simplebar-scrollbar" style="height: 0px; display: none;"></div>
+            </div>
+        </div>
+        <div class="p-3 empty-header-item1">
+            <div class="d-grid">
+                <a href="notifications-list.html" class="btn btn-primary">
+                    View All
+                </a>
+            </div>
+        </div> <div class="p-5 empty-item1 d-none">
+            <div class="text-center">
+                <span class="avatar avatar-xl avatar-rounded bg-danger-transparent">
+                    <i class="ri-notification-off-line fs-2"></i>
+                </span>
+                <h6 class="fw-medium mt-3">
+                    No New Notifications
+                </h6>
+            </div>
+        </div>
+    </div>
+</div>

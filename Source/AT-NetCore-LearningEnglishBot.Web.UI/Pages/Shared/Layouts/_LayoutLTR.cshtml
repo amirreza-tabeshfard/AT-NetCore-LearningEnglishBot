@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr" data-nav-layout="vertical" data-theme-mode="light" data-header-styles="light" data-menu-styles="dark" data-toggled="close">
+<head>
+    <title>@(ViewData["Title"]) | LearningEnglishBot</title>
+
+    <!-- Meta data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Amirreza Tabeshfard" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <!-- CSS(s) -->
+    <link href="~/favicon.png" type="image/x-icon" rel="shortcut icon" />
+    <link href="~/lib/main/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/layouts/styles.min.css" rel="stylesheet" />
+    <link href="~/css/layouts/waves.min.css" rel="stylesheet" />
+    <link href="~/css/layouts/simplebar.min.css" rel="stylesheet" />
+    <link href="~/css/layouts/flatpickr.min.css" rel="stylesheet" />
+    <link href="~/css/layouts/nano.min.css" rel="stylesheet" />
+    <link href="~/css/layouts/choices.min.css" rel="stylesheet" />
+
+    <!-- CSS(s): ICONS-FONTS -->
+    <link href="~/icons-font/layout/feather/css/feather.css" rel="stylesheet" />
+    <link href="~/lib/icons-fonts/remixicon/remixicon.min.css" rel="stylesheet" />
+    <link href="~/lib/icons-fonts/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="~/lib/icons-fonts/tabler-icons/tabler-icons.min.css" rel="stylesheet" />
+    <link href="~/lib/icons-fonts/tabler-icons/tabler-icons-200.min.css" rel="stylesheet" />
+    <link href="~/lib/icons-fonts/tabler-icons/tabler-icons-200-filled.min.css" rel="stylesheet" />
+    <link href="~/lib/icons-fonts/tabler-icons/tabler-icons-200-outline.min.css" rel="stylesheet" />
+    <link href="~/lib/icons-fonts/tabler-icons/tabler-icons-300.min.css" rel="stylesheet" />
+    <link href="~/lib/icons-fonts/tabler-icons/tabler-icons-300-filled.min.css" rel="stylesheet" />
+    <link href="~/lib/icons-fonts/tabler-icons/tabler-icons-300-outline.min.css" rel="stylesheet" />
+    <link href="~/lib/icons-fonts/tabler-icons/tabler-icons-filled.min.css" rel="stylesheet" />
+    <link href="~/lib/icons-fonts/tabler-icons/tabler-icons-outline.min.css" rel="stylesheet" />
+    <link href="~/lib/icons-fonts/line-awesome/line-awesome/css/line-awesome.min.css" rel="stylesheet" />
+    <link href="~/lib/icons-fonts/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="~/lib/icons-fonts/font-awesome/css/all.min.css" rel="stylesheet" />
+    <link href="~/lib/icons-fonts/materialdesign-webfont/css/materialdesignicons.min.css" rel="stylesheet" />
+    <link href="~/lib/icons-fonts/simple-line-icons/css/simple-line-icons.min.css" rel="stylesheet" />
+    <link href="~/lib/icons-fonts/ionicons/collection/components/icon/icon.min.css" rel="stylesheet" />
+    <link href="~/lib/icons-fonts/typicons/typicons.min.css" rel="stylesheet" />
+    <link href="~/lib/icons-fonts/weather-icons/css/weather-icons.min.css" rel="stylesheet" />
+
+    <!-- CSS(s): CurrentPage -->
+    @RenderSection(name: "Style", required: false)
+
+    <!-- Script(s) -->
+    <script src="~/js/layouts/choices.min.js"></script>
+    <script src="~/js/layouts/main.js"></script>
+
+    <!-- Script(s): CurrentPage -->
+    @RenderSection(name: "ScriptEndHead", required: false)
+</head>
+<body cz-shortcut-listen="true">
+    @{
+        await Html.RenderPartialAsync(partialViewName: "Partials/Layouts/SwitcherCanvas/_Root", model: null, viewData: null);
+        await Html.RenderPartialAsync(partialViewName: "Partials/Layouts/_Loader", model: null, viewData: null);
+    }
+    <div class="page">
+        @{
+            await Html.RenderPartialAsync(partialViewName: "Partials/Layouts/Header/_Root", model: null, viewData: null);
+            await Html.RenderPartialAsync(partialViewName: "Partials/Layouts/Sidebar/_Root", model: null, viewData: null);
+        }
+        <div class="main-content app-content">
+            <div class="container-fluid">
+                @RenderBody()
+            </div>
+        </div>
+        @{
+            await Html.RenderPartialAsync(partialViewName: "Partials/Layouts/_Footer", model: null, viewData: null);
+            await Html.RenderPartialAsync(partialViewName: "Partials/Layouts/Notifications/_Root", model: null, viewData: null);
+            await Html.RenderPartialAsync(partialViewName: "Partials/Layouts/Modal/_ChangePassword", model: null, viewData: null);
+        }
+    </div>
+    @{
+        await Html.RenderPartialAsync(partialViewName: "Partials/Layouts/_ScrollToTop", model: null, viewData: null);
+    }
+
+    <!-- Script(s) -->
+    <script src="~/lib/main/jquery/jquery.min.js"></script>
+    <script src="~/lib/main/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/layouts/popper.min.js"></script>
+    <script src="~/js/layouts/defaultmenu.min.js"></script>
+    <script src="~/js/layouts/waves.min.js"></script>
+    <script src="~/js/layouts/sticky.js"></script>
+    <script src="~/js/layouts/simplebar.min.js"></script>
+    <script src="~/js/layouts/simplebar.js"></script>
+    <script src="~/js/layouts/pickr.es5.min.js"></script>
+    <script src="~/js/layouts/custom-switcher.min.js"></script>
+    <script src="~/js/layouts/custom.js"></script>
+    <script src="~/js/layouts/beacon.min.js"></script>
+
+    <!-- Script(s): CurrentPage -->
+    @RenderSection(name: "ScriptEndBody", required: false)
+</body>
+</html>

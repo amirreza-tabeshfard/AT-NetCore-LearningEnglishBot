@@ -1,0 +1,21 @@
+﻿<header class="app-header">
+    <div class="main-header-container container-fluid">
+        <div class="header-content-left">
+            @{
+                await Html.RenderPartialAsync(partialViewName: "Partials/Layouts/Header/Left/_Search", model: null, viewData: null);
+            }
+        </div>
+        <div class="header-content-right">
+            @{
+                await Html.RenderPartialAsync(partialViewName: "Partials/Layouts/Header/Right/_ThemeMode", model: null, viewData: null);
+                await Html.RenderPartialAsync(partialViewName: "Partials/Layouts/Header/Right/_CountrySelector", model: null, viewData: null);
+                await Html.RenderPartialAsync(partialViewName: "Partials/Layouts/Header/Right/_Messages", model: null, viewData: null);
+                await Html.RenderPartialAsync(partialViewName: "Partials/Layouts/Header/Right/_LinkIcon", model: null, viewData: null);
+                await Html.RenderPartialAsync(partialViewName: "Partials/Layouts/Header/Right/_FullScreen", model: null, viewData: null);
+                await Html.RenderPartialAsync(partialViewName: "Partials/Layouts/Header/Right/_Notifications", model: null, viewData: null);
+                await Html.RenderPartialAsync(partialViewName: "Partials/Layouts/Header/Right/_Profile", model: null, viewData: null);
+                await Html.RenderPartialAsync(partialViewName: "Partials/Layouts/Header/Right/_TemplateSetting", model: null, viewData: null);
+            }
+        </div>
+    </div>
+</header>

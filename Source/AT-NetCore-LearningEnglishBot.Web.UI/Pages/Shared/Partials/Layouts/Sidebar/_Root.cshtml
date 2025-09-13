@@ -1,0 +1,45 @@
+﻿<aside class="app-sidebar sticky" id="sidebar">
+    <div class="main-sidebar-header">
+        @{
+            await Html.RenderPartialAsync(partialViewName: "Partials/Layouts/Sidebar/_Logo", model: null, viewData: null);
+        }
+    </div>
+    <div class="main-sidebar" id="sidebar-scroll" data-simplebar="init">
+        <div class="simplebar-wrapper" style="margin: -8px 0px -80px;">
+            <div class="simplebar-mask">
+                <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                    <div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: 100%; overflow: hidden scroll;">
+                        <div class="simplebar-content" style="padding: 8px 0px 80px;">
+                            <nav class="main-menu-container nav nav-pills flex-column sub-open open active">
+                                <div class="slide-left d-none" id="slide-left" style="display: block;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path>
+                                    </svg>
+                                </div>
+                                @{
+                                    await Html.RenderPartialAsync(partialViewName: "Partials/Layouts/Sidebar/_Avatar", model: null, viewData: null);
+                                }
+                                <ul class="main-menu" style="margin-left: 0px; margin-right: 0px;">
+                                    @{
+                                        await Html.RenderPartialAsync(partialViewName: "Partials/Layouts/Sidebar/SideMenu/_Home", model: null, viewData: null);
+                                        await Html.RenderPartialAsync(partialViewName: "Partials/Layouts/Sidebar/Categories/_Pages", model: null, viewData: null);
+                                        await Html.RenderPartialAsync(partialViewName: "Partials/Layouts/Sidebar/SideMenu/_SubmenusTest", model: null, viewData: null);
+                                    }
+                                </ul>
+                                <div class="slide-right d-none" id="slide-right">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+                                    </svg>
+                                </div>
+                                @{
+                                    await Html.RenderPartialAsync(partialViewName: "Partials/Layouts/Sidebar/_Announcement", model: null, viewData: null);
+                                }
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="simplebar-placeholder" style="width: auto; height: 1919px;"></div>
+        </div>
+    </div>
+</aside>
